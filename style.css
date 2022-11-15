@@ -1,0 +1,45 @@
+:root{
+    --font1:'Kanit', sans-serif;
+    --font2:'Sono', sans-serif;
+    --font3: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font1);
+}
+
+.container-fluid{
+    padding: 3rem;
+    margin-top: 4rem;
+    background-color: aliceblue;
+    max-width: 45%;
+    border-radius: 20px;
+}
+
+
+form .botones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    width: 50%;
+    margin: 2rem auto;
+}
+
+body{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+@media (max-width: 757px) {
+    body {
+      flex-direction: column;
+    }
+    .container-fluid{
+        max-width: 90%;
+    }
+  }
